@@ -1,6 +1,7 @@
 /* start variables rules */
 :root {
     --main-color: #19c8fa;
+    --transparent-color: rgb(15 116 143 / 70%);
 }
 
 /* end variables rules */
@@ -168,3 +169,107 @@ header nav .form i {
 }
 
 /* End header  */
+
+/* Start landing  */
+.landing {
+    position: relative;
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-color: rgb(33, 66, 110);
+}
+
+.landing .overlay {
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.landing .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+    color: white;
+    padding: 50px;
+    background-color: var(--transparent-color);
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.landing .text .content {
+    max-width: 500px
+}
+
+@media (max-width:767px) {
+    .landing .text {
+        width: 100%;
+    }
+
+    .landing .text .content {
+        max-width: 100%
+    }
+
+}
+
+.landing .text .content h2 {
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.landing .text .content p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.landing .change-background {
+    color: white;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width:767px) {
+    .landing .change-background {
+        display: none;
+    }
+}
+
+.landing .change-background:first-of-type {
+    left: 30px;
+}
+
+.landing .change-background:last-of-type {
+    right: 30px;
+}
+
+.landing .bullets {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.landing .bullets li {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.landing .bullets li.active {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+/* End landing  */
