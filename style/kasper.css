@@ -225,7 +225,7 @@ header nav .form i {
 .landing .overlay {
     background-color: rgb(0 0 0 / 60%);
     position: absolute;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     left: 0;
     top: 0;
@@ -317,7 +317,7 @@ header nav .form i {
 
 /* End landing  */
 
-/* Start Services */
+/* Start     */
 .services {
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
@@ -351,6 +351,7 @@ header nav .form i {
     .services .srv-box i {
         margin: 0 0 24px;
     }
+
     .services .srv-box .text h3 {
         margin-bottom: 24px;
     }
@@ -367,3 +368,76 @@ header nav .form i {
 }
 
 /* End Services */
+
+/* Start Design */
+.design {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    height: 600px;
+    position: relative;
+    background-image: url(../images/design-features.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.design::before {
+    content: '';
+    background-color: rgb(0 0 0 / 60%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.design .image,
+.design .text {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+}
+
+.design .image {
+    text-align: center;
+}
+
+.design .image img {
+    position: relative;
+    top: 150px;
+}
+
+@media (max-width:767px) {
+    .design .image {
+        display: none;
+    }
+}
+
+.design .text {
+    background-color: var(--transparent-color);
+    color: white;
+    padding: 50px;
+}
+
+.design .text h2 {
+    margin-bottom: 40px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+.design .text ul li {
+    padding: 15px 0;
+}
+
+.design .text ul li::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f108";
+    font-weight: 900;
+    margin-right: 20px;
+    position: relative;
+    top: 1px;
+}
+
+/* End Design */
