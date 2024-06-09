@@ -309,11 +309,15 @@ header nav .form i {
     background-color: transparent;
     border: 1px solid white;
     border-radius: 50%;
+    transition: 0.3s;
 }
 
-.landing .bullets li.active {
+.landing .bullets li.active,
+.landing .bullets li:hover {
     background-color: var(--main-color);
     border-color: var(--main-color);
+    width: 21px;
+    height: 21px;
 }
 
 /* End landing  */
