@@ -3,6 +3,7 @@
     --main-color: #19c8fa;
     --transparent-color: rgb(15 116 143 / 70%);
     --section-padding: 100px;
+    --text-color: #777;
 }
 
 /* end variables rules */
@@ -98,7 +99,7 @@ ul {
     margin: 0 auto 100px;
     max-width: 100%;
     line-height: 2;
-    color: #777;
+    color: var(--text-color);
 }
 
 /* end components */
@@ -364,7 +365,7 @@ header nav .form i {
 
 .services .srv-box p {
     line-height: 2;
-    color: #777;
+    color: var(--text-color);
 }
 
 /* End Services */
