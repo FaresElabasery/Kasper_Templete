@@ -1234,6 +1234,9 @@ video {
     cursor: pointer;
     font-weight: 500;
 }
+.contact .content form ::placeholder{
+    font-size: 16px;
+}
 
 .contact .content form input[type='text']:focus,
 .contact .content form input[type='email']:focus,
