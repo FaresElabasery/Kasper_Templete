@@ -1064,6 +1064,7 @@ video {
     bottom: -120px;
     transition: 0.5s;
 }
+
 .pricing .contact-link:hover::after {
     bottom: 0;
 }
@@ -1189,3 +1190,131 @@ video {
 }
 
 /* End Subscribe */
+
+/* Start Contact  */
+.contact {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+
+.contact .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width:767px) {
+    .contact .content {
+        flex-direction: column;
+    }
+}
+
+.contact .content form {
+    flex-basis: 70%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.contact .content form::after {
+    content:'send ';
+    font-weight: bolder;
+    text-transform: capitalize;
+    position: absolute;
+    font-size: 20px;
+    width: 146.65px;
+    height: 56px;
+    background-color: white;
+    color: var(--main-color);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    bottom: -100px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact .content form input[type='text']:focus,
+.contact .content form input[type='email']:focus,
+.contact .content form textarea:focus {
+    outline: none;
+    caret-color: var(--main-color);
+}
+
+.contact .content form:hover::after {
+    bottom: 0;
+}
+
+.contact .content form .main-input {
+    display: block;
+    margin-bottom: 30px;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 20px;
+}
+
+.contact .content form textarea {
+    height: 200px;
+}
+
+.contact .content form input[type='submit'] {
+    background-color: var(--main-color);
+    color: white;
+    padding: 20px;
+    margin-left: auto;
+    border: none;
+    display: flex;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.contact .info {
+    flex-basis: 25%;
+}
+
+@media (max-width:767px) {
+    .contact .info {
+        order: -1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: -20px;
+        padding: 0 15px;
+        margin-bottom: 32px;
+    }
+
+    .contact .info .box {
+        flex-basis: 50%;
+        margin: 0;
+        text-align: center;
+    }
+
+    .contact .info .box:last-child {
+        margin-top: 0px !important;
+    }
+}
+
+.contact .info h4 {
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.contact .info span {
+    display: block;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.contact .info .box:last-child {
+    margin-top: 90px;
+}
+
+.contact .info address {
+    line-height: 2;
+    color: #777;
+}
+
+/* End Contact  */
