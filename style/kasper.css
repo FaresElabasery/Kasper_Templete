@@ -1137,6 +1137,7 @@ video {
     top: 50%;
     transform: translateY(-50%);
     left: 25px;
+    transition: 0.5s
 }
 
 .subscribe form input[type='email'] {
