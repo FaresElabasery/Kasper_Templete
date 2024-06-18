@@ -1216,7 +1216,7 @@ video {
 }
 
 .contact .content form::after {
-    content:'send ';
+    content: 'send ';
     font-weight: bolder;
     text-transform: capitalize;
     position: absolute;
@@ -1234,7 +1234,8 @@ video {
     cursor: pointer;
     font-weight: 500;
 }
-.contact .content form ::placeholder{
+
+.contact .content form ::placeholder {
     font-size: 16px;
 }
 
@@ -1280,16 +1281,16 @@ video {
     .contact .info {
         order: -1;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: -20px;
-        padding: 0 15px;
-        margin-bottom: 32px;
+        margin-bottom: 24px;
+        margin-top: -32px;
+    }
+
+    .contact .info h4 {
+        margin-bottom: 16px !important;
     }
 
     .contact .info .box {
         flex-basis: 50%;
-        margin: 0;
         text-align: center;
     }
 
@@ -1300,7 +1301,7 @@ video {
 
 .contact .info h4 {
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
     font-weight: 500;
     font-size: 18px;
 }
@@ -1318,6 +1319,12 @@ video {
 .contact .info address {
     line-height: 2;
     color: #777;
+}
+
+@media (max-width:767px) {
+    .contact .info address {
+        line-height: 1.7;
+    }
 }
 
 /* End Contact  */
