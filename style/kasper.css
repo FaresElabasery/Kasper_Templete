@@ -1169,6 +1169,8 @@ video {
 .subscribe form input[type='submit']:focus,
 .subscribe form input[type='email']:focus {
     outline: none;
+    border-color: var(--main-color);
+    transition: 0.5s;
 }
 
 .subscribe form input[type='submit'] {
