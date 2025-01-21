@@ -27,7 +27,7 @@ A responsive HTML/CSS template for a modern website.
 2. Open the `index.html` file in a web browser to view the template.
 3. Customize the template by modifying the HTML, CSS, and image files as needed.
 
-**CSS Structure **
+**CSS Structure**
 -----------------
 
 The CSS is organized into several files:
@@ -36,7 +36,7 @@ The CSS is organized into several files:
 * `style/normalize.css`: Normalize CSS file
 * `style/kasper.css`: Main stylesheet for the template
 
-**Browser Support **
+**Browser Support**
 -------------------
 
 The template is tested to work in the following browsers:
